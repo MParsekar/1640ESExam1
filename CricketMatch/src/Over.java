@@ -8,4 +8,12 @@ public class Over {
 		currentBallofTheOver++;
 		totalRunsOver+=runs;
 	}
+	public int getScorePerOver(){
+		return totalRunsOver;
+	}
+	public void printScorePerBallInCurrentOver(){
+		for(int i=0; i<currentBallofTheOver;i++){
+			System.out.println("Ball "+i+" : "+overBalls[i]);
+		}
+	}
 }

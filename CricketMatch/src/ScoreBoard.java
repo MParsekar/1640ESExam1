@@ -20,7 +20,9 @@ public class ScoreBoard {
 			over[totalOver]=new Over();
 		}
 	}
-	
+	public int getCurrentBall(){
+		return this.over[totalOver-1].getRunsPreBall();
+	}
 	
 
 	public int getCurrentScore(){
@@ -35,7 +37,7 @@ public class ScoreBoard {
 	}
 	public void getScorePer(){
 		for(int i=0;i<totalOver;i++){
-			System.out.println("Over 1: "+(i+1));
+			System.out.println("Over 1: "+(i+1)+" runs: "+over[i].getScorePerOver());
 			over[i].printScorePerBallInCurrentOver();
 		}
 	}

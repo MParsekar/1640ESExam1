@@ -14,7 +14,10 @@ public class Over {
 	}
 	public void printScorePerBallInCurrentOver(){
 		for(int i=0; i<currentBallofTheOver;i++){
-			System.out.println("\tBall "+i+" : "+overBalls[i]);
+			System.out.println("\tBall "+(i+1)+" : "+overBalls[i]);
 		}
+	}
+	public int getRunsPreBall(){
+		return this.overBalls[currentBallofTheOver-1];
 	}
 }

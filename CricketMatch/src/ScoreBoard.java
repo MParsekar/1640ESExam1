@@ -11,10 +11,12 @@ public class ScoreBoard {
 			totalOver++;
 		}
 	}
-	public void getCurrentScore(){
+	public int getCurrentScore(){
+		int currentScore=0;
 		for(int i=0;i<6;i++){
-			over[i].g
+			currentScore+=over[i].getScorePerOver();
 		}
+		return currentScore;
 	}
 }	
 

@@ -13,7 +13,7 @@ public class ScoreBoard {
 	}
 	public void getCurrentScore(){
 		for(int i=0;i<6;i++){
-			
+			over[i].g
 		}
 	}
 }	
